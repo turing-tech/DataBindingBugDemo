@@ -7,8 +7,8 @@ import com.android.databindingbugdemo.Flavor
 
 class MainViewModel : ViewModel() {
 
-    val selectedFlavor = MutableLiveData<Flavor?>()
-    val title = map(selectedFlavor) { selectedFlavor.value?.title }
-    val cost = map(selectedFlavor) { selectedFlavor.value?.cost }
+    val selectedFlavor = MutableLiveData<Flavor>()
+    val title = map(selectedFlavor, Flavor::title)
+    val cost = map(selectedFlavor, Flavor::cost)
 
 }

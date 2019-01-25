@@ -40,13 +40,13 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text='@{viewmodel.title ?? "Blank"}'  />
+                android:text='@{viewmodel.title}'  />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text='@{Integer.toString(viewmodel.cost ?? -1)}' />
+                android:text='@{Integer.toString(viewmodel.cost)}' />
 
             <Button
                 android:id="@+id/button"
